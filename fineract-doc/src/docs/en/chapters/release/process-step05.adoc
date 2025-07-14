@@ -4,6 +4,10 @@
 
 Next, you create a git tag from the HEAD of the release's git branch.
 
+// FIXME - would, e.g. `maintenance/1.12` be a better branch name? shouldn't matter because it is temporary
+// FIXME - maybe add explicit advice to omit `-SNAPSHOT`?
+// FIXME - integrationTests doesn't likely work, maybe just build?
+
 [source,bash,subs="attributes+,+macros"]
 ----
 % git checkout {revnumber}
