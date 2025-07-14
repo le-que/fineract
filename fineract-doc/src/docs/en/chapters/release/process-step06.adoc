@@ -6,12 +6,10 @@ Create source and binary tarballs.
 
 [source,bash,subs="attributes+"]
 ----
-% ./gradlew build -x test
+% ./gradlew srcDistTar binaryDistTar
 ----
 
-Look in `fineract-war/build/distributions/` for the tarballs.
-
-// FIXME - use `gradle --rerun-tasks srcDistTar binaryDistTar` (maybe works w/o --rerun-tasks ?)
+Look in `fineract-war/build/distributions/` for the tarballs. If one or both are missing, try adding `--rerun-tasks` and running that again.
 
 Make sure to do some sanity checks. The source tarball and the code in the release branch (at the commit with the release tag) should match.
 
