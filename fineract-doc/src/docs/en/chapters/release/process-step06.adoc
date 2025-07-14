@@ -11,6 +11,8 @@ Create source and binary tarballs.
 
 Look in `fineract-war/build/distributions/` for the tarballs.
 
+// FIXME - use `gradle --rerun-tasks srcDistTar binaryDistTar` (maybe works w/o --rerun-tasks ?)
+
 Make sure to do some sanity checks. The source tarball and the code in the release branch (at the commit with the release tag) should match.
 
 [source,bash,subs="attributes+"]
