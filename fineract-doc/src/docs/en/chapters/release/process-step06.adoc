@@ -6,10 +6,11 @@ Create source and binary tarballs.
 
 [source,bash,subs="attributes+"]
 ----
-% ./gradlew srcDistTar binaryDistTar
+% ./gradlew --rerun-tasks srcDistTar binaryDistTar <1>
 ----
+<1> The source tarball might not be created if `--rerun-tasks` is omitted.
 
-Look in `fineract-war/build/distributions/` for the tarballs. If one or both are missing, try adding `--rerun-tasks` and running that again.
+Look in `fineract-war/build/distributions/` for the tarballs.
 
 Make sure to do some sanity checks. The source tarball and the code in the release branch (at the commit with the release tag) should match.
 
