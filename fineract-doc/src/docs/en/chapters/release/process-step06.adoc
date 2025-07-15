@@ -4,6 +4,8 @@
 
 Create source and binary tarballs.
 
+// FIXME - clean this up? focus on what commands should actually be run
+
 [source,bash,subs="attributes+"]
 ----
 % ./gradlew --rerun-tasks srcDistTar binaryDistTar <1>
