@@ -38,3 +38,5 @@ Finally, inspect `apache-fineract-{revnumber}-binary.tar.gz`. Make sure the `fin
 ----
 % ./gradlew fineractReleaseStep6
 ----
+
+CAUTION: This task doesn't work. Build release artifacts manually as indicated above.
